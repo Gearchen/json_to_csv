@@ -5,7 +5,7 @@ Convert json into csv format
 Written in Python 2.7.11
 
 ##Usage
-<pre><code>python json2csv.py file_in_json_format_to_transform</code></pre>
+<pre><code>python json2csv.py given_api</code></pre>
 
 ##Example
 <pre><code>[
