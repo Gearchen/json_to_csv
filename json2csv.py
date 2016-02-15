@@ -8,7 +8,7 @@ import csv
 import types
 import urllib2
 
-def registerUrl(url):  
+def GetUrl(url):  
     try:  
         data = urllib2.urlopen(url).read()  
         return data  
@@ -49,7 +49,7 @@ def transformData(primaryKey=""):
 
 if __name__ == '__main__':
     url = sys.argv[1]
-    data_load = registerUrl(url) # load data from the API
+    data_load = GetUrl(url) # load data from the API
     jsonFile(data_load) # write to json file
     filednames,trans_data = transformData() # transform json to csv
     with open('jsonToCsvResult.csv','wb') as f:
